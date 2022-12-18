@@ -13,13 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
   </head>
   <body>
-    <header> 
+    <header class="header">
       <div class="l-wrapper"> 
         <div class="l-header"> 
-          <div class="table-burger"> </div>
+          <button class="table-burger"> <span></span><span></span><span></span></button>
           <div class="c-logo"> <a href="/"><img src="./img/logo.svg" alt=""></a></div>
-          <div class="border">
+          <div class="border" id="nav">
+            <div class="overlay" id="overlay"></div>
             <nav class="l-header-nav">
+              <div class="mob-block"> 
+                <div class="c-feedback"><a href="#">Обратная связь</a></div>
+              </div>
               <ul class="dropdown menu desktop-nav" data-responsive-menu="accordion large-dropdown" data-hide-for="large">
                 <li class="desktop-nav__item"><a class="title" href="#">Каталог продукции<i class="arrow"></i></a>
                   <ul class="menu submenu-grid">
@@ -48,7 +52,7 @@
       </div>
     </header>
     <main> 
-      <section class="section first-section">
+      <section class="section first-section animate"> 
         <div class="l-wrapper"> 
           <div class="l-main-banner">
             <div class="l-block">
@@ -71,7 +75,7 @@
               <div class="js-main-banner">
                 <div class="swiper-wrapper"> 
                   <div class="swiper-slide"> <img src="./img/banner.png" alt=""></div>
-                  <div class="swiper-slide"> <img src="./img/banner.png" alt=""></div>
+                  <div class="swiper-slide"> <img src="./img/test.png" alt=""></div>
                   <div class="swiper-slide"> <img src="./img/banner.png" alt=""></div>
                 </div>
                 <div class="js-main-banner__pagination"></div>
@@ -85,8 +89,8 @@
           </div>
         </div>
       </section>
-      <hr class="hr">
-      <section class="section">
+      <hr class="hr animate">
+      <section class="section animate"> 
         <div class="l-wrapper">
           <div class="l-catalog-section"> 
             <div class="l-top"> 
@@ -108,8 +112,8 @@
           </div>
         </div>
       </section>
-      <hr class="hr">
-      <section class="section"> 
+      <hr class="hr animate">
+      <section class="section animate"> 
         <div class="l-wrapper"> 
           <div class="l-partners-content"> 
             <div class="l-top"> 
@@ -145,8 +149,8 @@
           </div>
         </div>
       </section>
-      <hr class="hr">
-      <section class="section"> 
+      <hr class="hr animate">
+      <section class="section animate"> 
         <div class="l-wrapper"> 
           <div class="l-news"> 
             <div class="l-title"> 
@@ -174,8 +178,8 @@
           </div>
         </div>
       </section>
-      <hr class="hr">
-      <section class="section"> 
+      <hr class="hr animate">
+      <section class="section animate"> 
         <div class="l-wrapper"> 
           <div class="l-contacts"> 
             <div class="l-title"> 
@@ -189,7 +193,7 @@
                 </ul>
                 <div class="tabs-content" data-tabs-content="contacts-tabs">
                   <ul class="tabs-panel is-active" id="tab-1">
-                    <li><a href="tel:8 (924) 000-00-00"> <i class="phone"> </i><span>8 (924) 000-00-00test</span></a></li>
+                    <li><a href="tel:8 (924) 000-00-00"> <i class="phone"> </i><span>8 (924) 000-00-00</span></a></li>
                     <li><a href="mailto:dendelion00.@mail.ru"> <i class="mail"></i><span>test.@mail.ru</span></a></li>
                   </ul>
                   <ul class="tabs-panel" id="tab-2">
